@@ -27,10 +27,16 @@
 - Fox News - Lead Ad Tech iOS Engineer  
 
 # Published Apps 📱
-### <img src="media/nowcast_icon.png" class="icon" width="30"/> <a href="https://apps.apple.com/us/app/nowcast-commuter-weather/id1501885597"> Nowcast - commuter weather</a>
-- Nowcast provides you with instant access to your commuter weather. It is a simple yet very effective app. You can set two time slots in which you would like weather to display. It will show you brief yet informative weather information for each of those times.
-- It is perfect for the busy commuter looking to quickly decide on an outfit before leaving for work.
 
+<div id="icon_container">
+
+<img src="media/nowcast_icon.png" class="icon" width="30"/>
+<a class="custom_link" href="https://apps.apple.com/us/app/nowcast-commuter-weather/id1501885597" > Nowcast - commuter weather</a>
+<p></p>
+<p>Nowcast provides you with instant access to your commuter weather. It is a simple yet very effective app. You can set two time slots in which you would like weather to display. It will show you brief yet informative weather information for each of those times.</p>
+
+<p>It is perfect for the busy commuter looking to quickly decide on an outfit before leaving for work.</p>
+</div>
 
 # Projects 📝
 ### <a href="https://github.com/wvabrinskas/Neuron">Neuron</a>
