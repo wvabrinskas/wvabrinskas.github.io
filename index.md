@@ -5,6 +5,7 @@
 <div id="logo_stack">
 <a href="https://twitter.com/wvabrinskas"><img src="media/twitter.png" class="logo" width="50"/></a>
 <a href="https://github.com/wvabrinskas"><img src="media/github.png" class="logo" width="50"/></a>
+<a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50"/></a>
 
 </div>
 
