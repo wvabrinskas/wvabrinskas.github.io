@@ -26,6 +26,12 @@
 #### Current
 - Fox News - Lead Ad Tech iOS Engineer  
 
+# Published Apps 📱
+### <img src="media/nowcast_icon.png" class="icon" width="30"/> <a href="https://apps.apple.com/us/app/nowcast-commuter-weather/id1501885597"> Nowcast - commuter weather</a>
+- Nowcast provides you with instant access to your commuter weather. It is a simple yet very effective app. You can set two time slots in which you would like weather to display. It will show you brief yet informative weather information for each of those times.
+- It is perfect for the busy commuter looking to quickly decide on an outfit before leaving for work.
+
+
 # Projects 📝
 ### <a href="https://github.com/wvabrinskas/Neuron">Neuron</a>
   - Neuron is a swift package I developed to help learn how to make neural networks. It is far from perfect and I am still learning. There is A LOT to learn here and I've just scratched the surface. As of right now this package provides a way to get started in machine learning completely in Swift.
