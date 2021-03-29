@@ -1,3 +1,14 @@
+<link
+  rel="stylesheet"
+  href="stylesheets/graph.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+<script
+  src="js/calendar.min.js"
+>
+</script>
+
 <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
 
 <img src="media/profile-sqr.jpg" class="profile" width="200"/>
@@ -8,6 +19,7 @@
 <a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50"/></a>
 
 </div>
+<div class="calendar"></div>
 
 # Hello! 👋
 
@@ -18,6 +30,10 @@
 - I'm a maker.
 - B.S. Degree in Toxicology
 
+<script>
+    new GitHubCalendar(".calendar", "wvabrinskas", { "responsive": true });
+</script>
+<p></p>
 ### Career
 #### Past
 - Elite Daily - iOS Engineer / Android Engineer 

@@ -20,7 +20,7 @@
 {"url":"http://localhost:4000/","headline":"William Vabrinskas","name":"William Vabrinskas","description":"Passionate iOS Engineer! I open source projects! I ❤️ ML","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=63e39eee7060ae232d3c6f203b9037992abd9f5b">
+    <link rel="stylesheet" href="/assets/css/style.css?v=eaf6d352a97904b38f5d9c958a1004e96452be81">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="/assets/js/respond.js"></script>
     <!--[if lt IE 9]>
@@ -51,7 +51,13 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+        <link rel="stylesheet" href="stylesheets/graph.css" />
+
+<!-- Prepare a container for your calendar. -->
+<script src="js/calendar.min.js">
+</script>
+
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
 
 <p><img src="media/profile-sqr.jpg" class="profile" width="200" /></p>
 
@@ -61,6 +67,7 @@
 <a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50" /></a>
 
 </div>
+<div class="calendar"></div>
 
 <h1 id="hello-">Hello! 👋</h1>
 
@@ -73,6 +80,11 @@
   <li>B.S. Degree in Toxicology</li>
 </ul>
 
+<script>
+    new GitHubCalendar(".calendar", "wvabrinskas", { "responsive": true });
+</script>
+
+<p></p>
 <h3 id="career">Career</h3>
 <h4 id="past">Past</h4>
 <ul>
