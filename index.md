@@ -75,14 +75,14 @@
   - Generate random user Avatars for apps.
   - Cocoapods support
 
-# Jailbreak Development
+# Jailbreak Development 📲
 ### <a href="https://repo.packix.com/package/com.irepo.boxy4/">Boxy 4</a> (and all previous versions)
 - Fully customize your icon layout on the iOS Springboard. You can adjust how far each icon is from each edge of the screen and how far each icon is from one another. These combinations can provide some pretty cool layouts. If you aren't the creative type or don't want to be bothered with testing each setting, there are presets available for you to choose from. You can align you icons in the the top half of the screen or the bottom half or even the top corners of the screen.
 - <a href="https://www.idownloadblog.com/2020/01/13/boxy-4/">Review on iDownloadBlog</a>
 
-# Talks
+# Talks 🗣
 - <a href="https://www.youtube.com/watch?v=s-vqn6H2nG4">(Jail)Breaking into Professional iOS Development - Jailbreakers Unite 2017</a>
 - <a href="https://www.youtube.com/watch?v=GU7tBmTYsQ8">Post development and customer service - WWJC 2015</a>
 
-# Interviews
+# Interviews 🎤
 - <a href="https://pocketfullofapps.com/2015/02/12/developer-spotlight-william-vabrinskas-part-one.html">Developer Spotlight: William Vabrinskas - 2015</a>
