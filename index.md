@@ -35,12 +35,13 @@
 </script>
 <p></p>
 ### Career
-#### Past
-- Elite Daily - iOS Engineer / Android Engineer 
-- Daily Mail - iOS Engineer 
 
 #### Current
 - Fox News - Lead Ad Tech iOS Engineer  
+
+#### Past
+- Daily Mail - iOS Engineer 
+- Elite Daily - iOS Engineer / Android Engineer 
 
 # Published Apps 📱
 
