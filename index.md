@@ -53,6 +53,8 @@
 
 # Projects 📝
 ### <a href="https://github.com/wvabrinskas/Neuron">Neuron</a>
+[![Tests](https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml)
+
   - Neuron is a swift package I developed to help learn how to make neural networks. It is far from perfect and I am still learning. There is A LOT to learn here and I've just scratched the surface. As of right now this package provides a way to get started in machine learning completely in Swift.
   - Swift package support
 
