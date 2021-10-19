@@ -59,6 +59,7 @@
   - Swift package support
 
 ### <a href="https://github.com/wvabrinskas/Genetic">Genetic</a>
+[![Tests](https://github.com/wvabrinskas/Genetic/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/Genetic/actions/workflows/tests.yml)
   - Genetic is a swift package that makes it incredibly simple to include the Genetic Algorithm within a project.
   - Swift package support
 
