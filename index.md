@@ -63,8 +63,14 @@
   - Genetic is a swift package that makes it incredibly simple to include the Genetic Algorithm within a project.
   - Swift package support
 
+### <a href="https://github.com/wvabrinskas/SwiftSearchTrie">SwiftSearchTrie</a>
+[![Tests](https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml)
+  - A swift package that utilizes a trie data structure to build and provide quick and efficient search algorithm. 
+  - Swift package support
+
 ### <a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a>
   - A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.
+
 
 ### <a href="https://github.com/wvabrinskas/SimpleApiClient">SimpleApiClient</a>
   - The most bare-bones api client you can imagine in Swift.
