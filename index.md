@@ -68,13 +68,14 @@
   - A swift package that utilizes a trie data structure to build and provide quick and efficient search algorithm. 
   - Swift package support
 
-### <a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a>
-  - A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.
-
-
 ### <a href="https://github.com/wvabrinskas/SimpleApiClient">SimpleApiClient</a>
+[![Tests](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml)
   - The most bare-bones api client you can imagine in Swift.
   - Swift package support
+
+
+### <a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a>
+  - A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.
 
 ### <a href="https://github.com/wvabrinskas/FareyAlgorithm">FareyAlgorithm</a>
   - "In mathematics, the Farey sequence of order n is the sequence of completely reduced fractions, either between 0 and 1, or without this restriction,[a] which when in lowest terms have denominators less than or equal to n, arranged in order of increasing size. With the restricted definition, each Farey sequence starts with the value 0, denoted by the fraction 0/1, and ends with the value 1, denoted by the fraction 1/1 (although some authors omit these terms)."
