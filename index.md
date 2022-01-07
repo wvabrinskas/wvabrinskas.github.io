@@ -68,6 +68,16 @@
   - A swift package that utilizes a trie data structure to build and provide quick and efficient search algorithm. 
   - Swift package support
 
+
+### <a href="https://github.com/wvabrinskas/SwiftSearchTrie">SwiftlyRedux</a>
+[![Tests](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml)
+  - A swift package that creates a new architecture for iOS development. It is very similiar to redux where there is one source of truth with a state manager object. 
+  - This framework makes a major improvement to the redux architecture in that you can directly access members of the state and call updates to subjects all with type safety without ambiguity as to what you're updating. 
+  - It is an incredibly modular architecure where the state calls out to its submodules without actually knowing what those modules do. Each module can be updated indvidually and pass its updates to the state object.
+  - This allows for your app to be easily testable.
+  - Combine support. 
+  - Swift package support
+
 ### <a href="https://github.com/wvabrinskas/SimpleApiClient">SimpleApiClient</a>
 [![Tests](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml)
   - The most bare-bones api client you can imagine in Swift.
