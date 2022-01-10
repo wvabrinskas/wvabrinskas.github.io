@@ -69,7 +69,7 @@
   - Swift package support
 
 
-### <a href="https://github.com/wvabrinskas/SwiftSearchTrie">SwiftlyRedux</a>
+### <a href="https://github.com/wvabrinskas/SwiftlyRedux">SwiftlyRedux</a>
 [![Tests](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml)
   - A swift package that creates a new architecture for iOS development. It is very similiar to redux where there is one source of truth with a state manager object. 
   - This framework makes a major improvement to the redux architecture in that you can directly access members of the state and call updates to subjects all with type safety without ambiguity as to what you're updating. 
