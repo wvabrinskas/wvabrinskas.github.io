@@ -82,6 +82,12 @@
 [![Tests](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml)
   - The most bare-bones api client you can imagine in Swift.
   - Swift package support
+
+### <a href="https://github.com/wvabrinskas/NumSwift">SimpleApiClient</a>
+[![Tests](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml)
+  - Adds array arithmetic to Swift
+  - Swift package support
+ 
  
 ### <a href="https://github.com/wvabrinskas/CalendarUI">CalendarUI</a>
   - A swift package for SwiftUI that allows you to quickly and simply add a full calendar to your SwiftUI projects.
