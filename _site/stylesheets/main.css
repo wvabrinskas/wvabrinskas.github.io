@@ -39,6 +39,29 @@
   padding:5px;
 }
 
+#sponsor {
+  float: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+}
+
+#link_stack {
+  float: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+}
+
+
 #header, span.credits {
   visibility: hidden;
   height: 0%;

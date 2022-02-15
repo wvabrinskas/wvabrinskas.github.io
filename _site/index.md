@@ -17,8 +17,13 @@
 <a href="https://twitter.com/wvabrinskas"><img src="media/twitter.png" class="logo" width="50"/></a>
 <a href="https://github.com/wvabrinskas"><img src="media/github.png" class="logo" width="50"/></a>
 <a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50"/></a>
-
 </div>
+
+
+<div id="sponsor">
+<iframe src="https://github.com/sponsors/wvabrinskas/button" title="Sponsor wvabrinskas" height="35" width="116" style="border: 0;"></iframe>
+</div>
+
 <div class="calendar"></div>
 
 # Hello! 👋
@@ -35,12 +40,14 @@
 </script>
 <p></p>
 ### Career
-#### Past
-- Elite Daily - iOS Engineer / Android Engineer 
-- Daily Mail - iOS Engineer 
 
 #### Current
+- Uber - Senior iOS Engineer (Grocery)
+
+#### Past
 - Fox News - Lead Ad Tech iOS Engineer  
+- Daily Mail - iOS Engineer 
+- Elite Daily - iOS Engineer / Android Engineer 
 
 # Published Apps 📱
 
@@ -51,19 +58,47 @@
 
 # Projects 📝
 ### <a href="https://github.com/wvabrinskas/Neuron">Neuron</a>
+[![Tests](https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml)
+
   - Neuron is a swift package I developed to help learn how to make neural networks. It is far from perfect and I am still learning. There is A LOT to learn here and I've just scratched the surface. As of right now this package provides a way to get started in machine learning completely in Swift.
   - Swift package support
 
 ### <a href="https://github.com/wvabrinskas/Genetic">Genetic</a>
+[![Tests](https://github.com/wvabrinskas/Genetic/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/Genetic/actions/workflows/tests.yml)
   - Genetic is a swift package that makes it incredibly simple to include the Genetic Algorithm within a project.
   - Swift package support
 
-### <a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a>
-  - A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.
+### <a href="https://github.com/wvabrinskas/SwiftSearchTrie">SwiftSearchTrie</a>
+[![Tests](https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml)
+  - A swift package that utilizes a trie data structure to build and provide quick and efficient search algorithm. 
+  - Swift package support
+
+
+### <a href="https://github.com/wvabrinskas/SwiftlyRedux">SwiftlyRedux</a>
+[![Tests](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml)
+  - A swift package that creates a new architecture for iOS development. It is very similiar to redux where there is one source of truth with a state manager object. 
+  - This framework makes a major improvement to the redux architecture in that you can directly access members of the state and call updates to subjects all with type safety without ambiguity as to what you're updating. 
+  - It is an incredibly modular architecure where the state calls out to its submodules without actually knowing what those modules do. Each module can be updated indvidually and pass its updates to the state object.
+  - This allows for your app to be easily testable.
+  - Combine support. 
+  - Swift package support
 
 ### <a href="https://github.com/wvabrinskas/SimpleApiClient">SimpleApiClient</a>
+[![Tests](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml)
   - The most bare-bones api client you can imagine in Swift.
   - Swift package support
+
+### <a href="https://github.com/wvabrinskas/NumSwift">SimpleApiClient</a>
+[![Tests](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml)
+  - Adds array arithmetic to Swift
+  - Swift package support
+ 
+ 
+### <a href="https://github.com/wvabrinskas/CalendarUI">CalendarUI</a>
+  - A swift package for SwiftUI that allows you to quickly and simply add a full calendar to your SwiftUI projects.
+
+### <a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a>
+  - A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.
 
 ### <a href="https://github.com/wvabrinskas/FareyAlgorithm">FareyAlgorithm</a>
   - "In mathematics, the Farey sequence of order n is the sequence of completely reduced fractions, either between 0 and 1, or without this restriction,[a] which when in lowest terms have denominators less than or equal to n, arranged in order of increasing size. With the restricted definition, each Farey sequence starts with the value 0, denoted by the fraction 0/1, and ends with the value 1, denoted by the fraction 1/1 (although some authors omit these terms)."
@@ -74,22 +109,3 @@
 ### <a href="https://github.com/wvabrinskas/Avatar">Avatar</a>
   - Generate random user Avatars for apps.
   - Cocoapods support
-
-# Jailbreak Development 📲
-### <a href="https://repo.packix.com/package/com.irepo.boxy4/">Boxy 4</a> (and all previous versions)
-- Fully customize your icon layout on the iOS Springboard. You can adjust how far each icon is from each edge of the screen and how far each icon is from one another. These combinations can provide some pretty cool layouts. If you aren't the creative type or don't want to be bothered with testing each setting, there are presets available for you to choose from. You can align you icons in the the top half of the screen or the bottom half or even the top corners of the screen.
-- <a href="https://www.idownloadblog.com/2020/01/13/boxy-4/">Review on iDownloadBlog</a>
-
-### <a href="https://repo.packix.com/package/com.irepo.vinculum">Vinculum</a>
-- The iOS app drawer before the native app drawer.
-- <a href="https://www.idownloadblog.com/2016/09/29/vinculum">Review on iDownloadBlog</a>
-
-### <a href="https://cydia.saurik.com/info/com.modmyi.sticky/">Sticky</a>
-- Add sticky notes to your lock screen. 
-
-# Talks 🗣
-- <a href="https://www.youtube.com/watch?v=s-vqn6H2nG4">(Jail)Breaking into Professional iOS Development - Jailbreakers Unite 2017</a>
-- <a href="https://www.youtube.com/watch?v=GU7tBmTYsQ8">Post development and customer service - WWJC 2015</a>
-
-# Interviews 🎤
-- <a href="https://pocketfullofapps.com/2015/02/12/developer-spotlight-william-vabrinskas-part-one.html">Developer Spotlight: William Vabrinskas - 2015</a>
