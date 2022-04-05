@@ -17,6 +17,7 @@
 <a href="https://twitter.com/wvabrinskas"><img src="media/twitter.png" class="logo" width="50"/></a>
 <a href="https://github.com/wvabrinskas"><img src="media/github.png" class="logo" width="50"/></a>
 <a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50"/></a>
+<a href="https://discord.gg/p84DYph4PW"><img src="media/discord.png" class="logo" width="50"></a>
 </div>
 
 
@@ -88,7 +89,7 @@
   - The most bare-bones api client you can imagine in Swift.
   - Swift package support
 
-### <a href="https://github.com/wvabrinskas/NumSwift">SimpleApiClient</a>
+### <a href="https://github.com/wvabrinskas/NumSwift">NumSwift</a>
 [![Tests](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml)
   - Adds array arithmetic to Swift
   - Swift package support
