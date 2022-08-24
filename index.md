@@ -74,6 +74,9 @@
   - A swift package that utilizes a trie data structure to build and provide quick and efficient search algorithm. 
   - Swift package support
 
+### <a href="https://github.com/wvabrinskas/Paver">Paver</a>
+  - lightweight UIView layout utility. It's effectively an extension on UIView allowing for quick constraint assignment to any view. It reduces the complexity of using the built-in AutoLayout by wrapping a lot of the verbose assignments to easy to read functions and variables.
+  - Swift package support
 
 ### <a href="https://github.com/wvabrinskas/SwiftlyRedux">SwiftlyRedux</a>
 [![Tests](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml)
