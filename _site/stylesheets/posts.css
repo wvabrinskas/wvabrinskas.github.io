@@ -82,7 +82,11 @@ body {
   min-height:100%; 
 }
 
-@media (width <= 1000px) {
+code {
+  white-space : pre-wrap !important;
+}
+
+@media only screen and (device-width <= 1000px) {
   .post_container {
     max-width: 95% !important;
   } 

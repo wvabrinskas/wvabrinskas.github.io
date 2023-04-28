@@ -35,11 +35,11 @@
     </div>
 
     <div class="post_body">
-      <h2>
+      <p>
         While I was developing a personal Swift application I was having trouble picking a mobile architecture. I've
         worked with many different architectures in the past, but I wanted to try something new, since this was a
         personal project anyway. Might as well have some fun. So I decided to create my own architecture. 
-      </h2>
+      </p>
       <p>
         The architecture takes a lot from the RIBs architecture, with the idea of a builder and a router. Where the
         builder is responsible for creating the module and router with their respective dependencies. However instead
@@ -70,13 +70,13 @@
       </p>
       <pre class="prettyprint">
         <code class="language-swift">
-          public protocol SomeComponent: Component {
-            var depA: DepA { get }
-          }
-          
-          public class SomeComponentImpl: Component, RootComponent {
-            public var depA: DepA { DepA() }
-          }  
+  public protocol SomeComponent: Component {
+    var depA: DepA { get }
+  }
+
+  public class SomeComponentImpl: Component, RootComponent {
+    public var depA: DepA { DepA() }
+  }  
         </code>
         </pre>
       <p>
@@ -87,79 +87,79 @@
       </p>
       <pre class="prettyprint">
           <code class="language-swift">
-        public protocol ComponentProviding: AnyObject, ModuleComponent {
-          subscript<T>(dynamicMember member: String) -> T { get }
-        }
-        
-        @dynamicMemberLookup
-        public class Component: ComponentProviding {
-          public let parent: Component?
+  public protocol ComponentProviding: AnyObject, ModuleComponent {
+    subscript<T>(dynamicMember member: String) -> T { get }
+  }
 
-          private var cachedProperties: [String: Any] = [:]
-          
-          public init(parent: Component?) {
-            self.parent = parent
-          }
+  @dynamicMemberLookup
+  public class Component: ComponentProviding {
+    public let parent: Component?
+
+    private var cachedProperties: [String: Any] = [:]
+    
+    public init(parent: Component?) {
+      self.parent = parent
+    }
+
+    public subscript<T>(dynamicMember member: String) -> T {
+      if let cached = cachedProperties[member], let val = cached as? T {
+        return val
+      }
+      
+      var component: Component? = self
+      
+      while let comp = component {
+        let mirror = Mirror(reflecting: comp)
         
-          public subscript<T>(dynamicMember member: String) -> T {
-            if let cached = cachedProperties[member], let val = cached as? T {
-              return val
-            }
-            
-            var component: Component? = self
-            
-            while let comp = component {
-              let mirror = Mirror(reflecting: comp)
-              
-              for c in mirror.children {
-                if c.label == member, let value = c.value as? T {
-                  cachedProperties[member] = value
-                  return value
-                }
-              }
-              component = parent
-            }
-        
-            fatalError("Cannot find dependency in component graph -> \(member): \(String(describing: T.self))")
+        for c in mirror.children {
+          if c.label == member, let value = c.value as? T {
+            cachedProperties[member] = value
+            return value
           }
         }
-      </code>
-      </pre>
-      <h1>
-        Builder
-      </h1>
-      <p>
-        The builder is responsible for creating the Module and Router. It is passed the parent Component, the
-        ModuleHolder, as well as the ModuleHolderContext.
-        It will use those to contruct the module, router, and component dependency graph.
-      </p>
-      <pre class="prettyprint">
-          <code class="language-swift">
-            public protocol SomeModuleBuilding: ViewBuilding, ModuleBuilder {
-            }
-            
-            public struct SomeModuleBuilder: SomeModuleBuilding {
-              public func buildRouter<T, R>(component: T) -> R? where T : ViewComponent, R : Routing {
-                guard let c = component as? SomeViewComponentImpl else { return nil }
-                return SomeModuleRouter(component: c) as? R
-              }
-              
-              public func build(parentComponent: Component,
-                                holder: SomeModuleHolder?,
-                                context: SomeModuleHolderContext) -> SomeModule {
-                
-                let component = SomeModuleComponentImpl(parent: parentComponent,
-                                                        depA: parentComponent.depA)
-                
-                let module = SomeModule(holder: holder, context: context, component: component)
-                
-                let viewComponent = SomeViewComponentImpl(module: module, moduleHolder: holder)
-                
-                module.router = buildRouter(component: viewComponent)
-                
-                return module
-              }
-            }
+        component = parent
+      }
+
+      fatalError("Cannot find dependency in component graph -> \(member): \(String(describing: T.self))")
+    }
+  }
+        </code>
+        </pre>
+        <h1>
+          Builder
+        </h1>
+        <p>
+          The builder is responsible for creating the Module and Router. It is passed the parent Component, the
+          ModuleHolder, as well as the ModuleHolderContext.
+          It will use those to contruct the module, router, and component dependency graph.
+        </p>
+        <pre class="prettyprint">
+            <code class="language-swift">
+  public protocol SomeModuleBuilding: ViewBuilding, ModuleBuilder {
+  }
+
+  public struct SomeModuleBuilder: SomeModuleBuilding {
+    public func buildRouter<T, R>(component: T) -> R? where T : ViewComponent, R : Routing {
+      guard let c = component as? SomeViewComponentImpl else { return nil }
+      return SomeModuleRouter(component: c) as? R
+    }
+    
+    public func build(parentComponent: Component,
+                      holder: SomeModuleHolder?,
+                      context: SomeModuleHolderContext) -> SomeModule {
+      
+      let component = SomeModuleComponentImpl(parent: parentComponent,
+                                              depA: parentComponent.depA)
+      
+      let module = SomeModule(holder: holder, context: context, component: component)
+      
+      let viewComponent = SomeViewComponentImpl(module: module, moduleHolder: holder)
+      
+      module.router = buildRouter(component: viewComponent)
+      
+      return module
+    }
+  }
       </code>
       </pre>
       <h1>
@@ -173,38 +173,38 @@
       </p>
       <pre class="prettyprint">
         <code class="language-swift">
-      public protocol SomeModuleComponent: Component {
-        var depA: DepA { get }
-      }
-      
-      public class SomeModuleComponentImpl: Component, SomeModuleComponent {
-        public var depA: DepA
-        
-        public init(parent: Component?,
-                    depA: DepA) {
-          self.depA = depA
-          super.init(parent: parent)
-        }
-      }
-      
-      public protocol SomeModuleSupporting {
-        // public facing functions for the module
-      }
-      
-      public final class SomeModule: SomeModuleSupporting, Module {
-        public weak var holder: ModuleHolder?
-        public var router: SomeRouter?
-        public let key: SupportedModules = .someModule
-        
-        private let depA: DepA
-        
-        public init(holder: ModuleHolder?, context: SomeModuleHolderContext, component: SomeModuleComponent) {
-          self.holder = holder
-          depA = component.depA
-        }
-        
-        // public facing functions for the module
-      }
+  public protocol SomeModuleComponent: Component {
+    var depA: DepA { get }
+  }
+
+  public class SomeModuleComponentImpl: Component, SomeModuleComponent {
+    public var depA: DepA
+    
+    public init(parent: Component?,
+                depA: DepA) {
+      self.depA = depA
+      super.init(parent: parent)
+    }
+  }
+
+  public protocol SomeModuleSupporting {
+    // public facing functions for the module
+  }
+
+  public final class SomeModule: SomeModuleSupporting, Module {
+    public weak var holder: ModuleHolder?
+    public var router: SomeRouter?
+    public let key: SupportedModules = .someModule
+    
+    private let depA: DepA
+    
+    public init(holder: ModuleHolder?, context: SomeModuleHolderContext, component: SomeModuleComponent) {
+      self.holder = holder
+      depA = component.depA
+    }
+    
+    // public facing functions for the module
+  }
         </code>
         </pre>
       <h1>
@@ -224,36 +224,36 @@
 
       <pre class="prettyprint">
           <code class="language-swift">
-        public protocol SomeViewComponent: ViewComponent {
-          var module: SomeModuleSupporting { get }
-          var moduleHolder: ModuleHolder? { get }
-        }
+  public protocol SomeViewComponent: ViewComponent {
+    var module: SomeModuleSupporting { get }
+    var moduleHolder: ModuleHolder? { get }
+  }
 
-        public struct SomeViewComponentImpl: SettingsViewComponent {
-          public var module: SettingsSupporting
-          public var moduleHolder: ModuleHolder?
-        }
+  public struct SomeViewComponentImpl: SettingsViewComponent {
+    public var module: SettingsSupporting
+    public var moduleHolder: ModuleHolder?
+  }
 
-        public protocol SomeModuleRouting: Routing {}
+  public protocol SomeModuleRouting: Routing {}
 
-        public class SomeMOduleRouter: SomeModuleRouting, Logger {
-          
-          public var logLevel: LogLevel = .high
-          private let moduleHolder: SomeModuleHolder?
-          private let component: SomeViewComponent
-          
-          public init(component: SomeViewComponent) {
-            self.component = component
-            self.moduleHolder = component.moduleHolder as? SomeModuleHolder
-            if moduleHolder == nil {
-              log(type: .message, message: "No valid ModuleHolder to be found in \(#file)")
-            }
-          }
-          
-          public func rootView() -> any View {
-            SomeRootView()
-          }
-        }
+  public class SomeMOduleRouter: SomeModuleRouting, Logger {
+    
+    public var logLevel: LogLevel = .high
+    private let moduleHolder: SomeModuleHolder?
+    private let component: SomeViewComponent
+    
+    public init(component: SomeViewComponent) {
+      self.component = component
+      self.moduleHolder = component.moduleHolder as? SomeModuleHolder
+      if moduleHolder == nil {
+        log(type: .message, message: "No valid ModuleHolder to be found in \(#file)")
+      }
+    }
+    
+    public func rootView() -> any View {
+      SomeRootView()
+    }
+  }
         </code>
         </pre>
       <h1>
@@ -271,39 +271,39 @@
       </p>
       <pre class="prettyprint">
         <code class="language-swift">
-        public struct SomeModuleHolderContext: ModuleHolderContext {
-          public var parent: ModuleHolderContext? = nil
-        }
-        
-        @dynamicMemberLookup
-        public class SomeModuleHolder: RootModule, Module, ModuleHolder {
-          
-          public let holder: ModuleHolder? = nil
-          public typealias Context = SomeModuleHolderContext
-          public typealias Router = SomeRouter
-            
-          public var key: SupportedModules = .some
-          public var router: Router?
-          
-          public var supportedModules: [any Module] = []
-          
-          private let component: SomeComponent
-          
-          public required init(holder: ModuleHolder? = nil, context: RootModuleHolderContext, component: RootComponent) {
-            self.component = component
-            supportedModules = [
-              // Some modules here
-              // SomeModuleBuilder().build(parentComponent: component, holder: self, context: context)
-            ]
-            
-            router = SomeBuilder().buildRouter(component: SomeViewComponentImpl(moduleHolder: self,
-                                                                                depA: component.depA))
-          }
-          
-          public func routeToRootView() -> any View {
-            router?.rootView() ?? ErrorView()
-          }
-        }
+  public struct SomeModuleHolderContext: ModuleHolderContext {
+    public var parent: ModuleHolderContext? = nil
+  }
+
+  @dynamicMemberLookup
+  public class SomeModuleHolder: RootModule, Module, ModuleHolder {
+    
+    public let holder: ModuleHolder? = nil
+    public typealias Context = SomeModuleHolderContext
+    public typealias Router = SomeRouter
+      
+    public var key: SupportedModules = .some
+    public var router: Router?
+    
+    public var supportedModules: [any Module] = []
+    
+    private let component: SomeComponent
+    
+    public required init(holder: ModuleHolder? = nil, context: RootModuleHolderContext, component: RootComponent) {
+      self.component = component
+      supportedModules = [
+        // Some modules here
+        // SomeModuleBuilder().build(parentComponent: component, holder: self, context: context)
+      ]
+      
+      router = SomeBuilder().buildRouter(component: SomeViewComponentImpl(moduleHolder: self,
+                                                                          depA: component.depA))
+    }
+    
+    public func routeToRootView() -> any View {
+      router?.rootView() ?? ErrorView()
+    }
+  }
       </code>
       </pre>
       <p>
@@ -312,34 +312,34 @@
 
       <pre class="prettyprint">
         <code class="language-swift">
-      public extension ModuleHolder {
-        subscript<T>(dynamicMember member: String) -> T? {
-          var holder: ModuleHolder? = self
-          while holder != nil {
-            
-            if let moduleKey = SupportedModules(rawValue: member),
-              let m: T = holder?.supportedModules.first(where: { $0.key == moduleKey }) as? T {
-              return m
-            }
-            
-            holder = self.holder
-          }
-          
-          return nil
-        }
-
-        func module<T>(for id: SupportedModules) -> T? {
-          let t: T? = self[dynamicMember: id.rawValue]
-          return t
+  public extension ModuleHolder {
+    subscript<T>(dynamicMember member: String) -> T? {
+      var holder: ModuleHolder? = self
+      while holder != nil {
+        
+        if let moduleKey = SupportedModules(rawValue: member),
+          let m: T = holder?.supportedModules.first(where: { $0.key == moduleKey }) as? T {
+          return m
         }
         
-        func router<T, M>(for id: SupportedModules, moduleType: M.Type) -> T? {
-          let t: M? = self[dynamicMember: id.rawValue]
-          let r = t as? (any Module)
-          return r?.router as? T
-        }
-
+        holder = self.holder
       }
+      
+      return nil
+    }
+
+    func module<T>(for id: SupportedModules) -> T? {
+      let t: T? = self[dynamicMember: id.rawValue]
+      return t
+    }
+    
+    func router<T, M>(for id: SupportedModules, moduleType: M.Type) -> T? {
+      let t: M? = self[dynamicMember: id.rawValue]
+      let r = t as? (any Module)
+      return r?.router as? T
+    }
+
+  }
     </code>
     </pre>
       <p>
