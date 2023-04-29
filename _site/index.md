@@ -51,6 +51,9 @@
 - Daily Mail - iOS Engineer 
 - Elite Daily - iOS Engineer / Android Engineer 
 
+# Posts 
+### <a class="custom_link" href="pages/post/swift-arch" > A New Swift Architecture</a>
+Published: 04-28-2023
 # Published Apps 📱
 
 ### <a class="custom_link" href="https://apps.apple.com/us/app/nowcast-commuter-weather/id1501885597" > Nowcast - commuter weather</a>
