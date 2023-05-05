@@ -117,7 +117,7 @@
             return value
           }
         }
-        component = parent
+        component = component?.parent
       }
 
       fatalError("Cannot find dependency in component graph -> \(member): \(String(describing: T.self))")
