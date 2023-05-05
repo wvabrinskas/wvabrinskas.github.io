@@ -108,7 +108,11 @@
       
       var component: Component? = self
       
+      var tree: String = ""
+      
       while let comp = component {
+        tree += "\(tree.isEmpty ? "" : " -> ")\(String(describing: comp))"
+        
         let mirror = Mirror(reflecting: comp)
         
         for c in mirror.children {
@@ -117,10 +121,11 @@
             return value
           }
         }
+        
         component = component?.parent
       }
-
-      fatalError("Cannot find dependency in component graph -> \(member): \(String(describing: T.self))")
+  
+      fatalError("Cannot find \(member): \(String(describing: T.self)) in component graph: \(tree) ")
     }
   }
         </code>
