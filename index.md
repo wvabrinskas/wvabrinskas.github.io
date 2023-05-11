@@ -68,12 +68,12 @@ Published: 04-28-2023
   - Neuron is a swift package I developed to help learn how to make neural networks. It is far from perfect and I am still learning. There is A LOT to learn here and I've just scratched the surface. As of right now this package provides a way to get started in machine learning completely in Swift.
   - Swift package support
 
-  ### <a href="https://github.com/wvabrinskas/NeuronDatasets">Neuron</a>
+  ### <a href="https://github.com/wvabrinskas/NeuronDatasets">NeuronDatasets</a>
 
   - Package contains machine learning datasets that are supported by the Neuron package.
   - Swift package support
 
-  ### <a href="https://github.com/wvabrinskas/NeuronRemoteLogger">Neuron</a>
+  ### <a href="https://github.com/wvabrinskas/NeuronRemoteLogger">NeuronRemoteLogger</a>
 
   - Package that connects the Neuron package to various remote loggers like Weights and Biases
   - Swift package support
