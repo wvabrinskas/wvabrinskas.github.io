@@ -68,6 +68,16 @@ Published: 04-28-2023
   - Neuron is a swift package I developed to help learn how to make neural networks. It is far from perfect and I am still learning. There is A LOT to learn here and I've just scratched the surface. As of right now this package provides a way to get started in machine learning completely in Swift.
   - Swift package support
 
+  ### <a href="https://github.com/wvabrinskas/NeuronDatasets">Neuron</a>
+
+  - Package contains machine learning datasets that are supported by the Neuron package.
+  - Swift package support
+
+  ### <a href="https://github.com/wvabrinskas/NeuronRemoteLogger">Neuron</a>
+
+  - Package that connects the Neuron package to various remote loggers like Weights and Biases
+  - Swift package support
+
 ### <a href="https://github.com/wvabrinskas/Genetic">Genetic</a>
 [![Tests](https://github.com/wvabrinskas/Genetic/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/Genetic/actions/workflows/tests.yml)
   - Genetic is a swift package that makes it incredibly simple to include the Genetic Algorithm within a project.
