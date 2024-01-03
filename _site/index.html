@@ -20,7 +20,7 @@
 {"headline":"William Vabrinskas","url":"http://localhost:4000/","name":"William Vabrinskas","description":"Passionate iOS Engineer! I open source projects! I ❤️ ML","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=0e25f231a36cbafb2e70573eff5684459b662b4a">
+    <link rel="stylesheet" href="/assets/css/style.css?v=33e4bce185a766a087500fa71700b928f529f8a4">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="/assets/js/respond.js"></script>
     <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
 <p><img src="media/profile-sqr.jpg" class="profile" width="200" /></p>
 
 <div id="logo_stack">
-<a href="https://twitter.com/wvabrinskas"><img src="media/twitter.png" class="logo" width="50" /></a>
+<a href="https://twitter.com/wvabrinskas"><img src="media/x.png" class="logo" width="50" /></a>
 <a href="https://github.com/wvabrinskas"><img src="media/github.png" class="logo" width="50" /></a>
 <a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50" /></a>
 <a href="https://discord.gg/p84DYph4PW"><img src="media/discord.png" class="logo" width="50" /></a>
@@ -72,8 +72,6 @@
 <div id="sponsor">
 <iframe src="https://github.com/sponsors/wvabrinskas/button" title="Sponsor wvabrinskas" height="35" width="116" style="border: 0;"></iframe>
 </div>
-
-<div class="calendar"></div>
 
 <h1 id="hello-">Hello! 👋</h1>
 
@@ -86,16 +84,12 @@
   <li>B.S. Degree in Toxicology</li>
 </ul>
 
-<script>
-    new GitHubCalendar(".calendar", "wvabrinskas", { "responsive": true });
-</script>
-
 <p></p>
 <h3 id="career">Career</h3>
 
 <h4 id="current">Current</h4>
 <ul>
-  <li>Uber - Senior iOS Engineer (Grocery)</li>
+  <li>Uber - Senior iOS Engineer</li>
 </ul>
 
 <h4 id="past">Past</h4>
@@ -121,11 +115,35 @@
 </ul>
 
 <h1 id="projects-">Projects 📝</h1>
+<ul>
+  <li><a href="#ai--machine-learning">AI / Machine Learning</a></li>
+  <li><a href="#algorithms">Algorithms</a></li>
+  <li><a href="#ui">UI</a></li>
+  <li><a href="#general">General</a></li>
+</ul>
+
+<hr />
+<h3 id="ai--machine-learning">AI / Machine Learning</h3>
+<hr />
 <h3 id="neuron"><a href="https://github.com/wvabrinskas/Neuron">Neuron</a></h3>
 <p><a href="https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml"><img src="https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml/badge.svg?branch=master" alt="Tests" /></a></p>
 
 <ul>
   <li>Neuron is a swift package I developed to help learn how to make neural networks. It is far from perfect and I am still learning. There is A LOT to learn here and I’ve just scratched the surface. As of right now this package provides a way to get started in machine learning completely in Swift.</li>
+  <li>Swift package support</li>
+</ul>
+
+<h3 id="neurondatasets"><a href="https://github.com/wvabrinskas/NeuronDatasets">NeuronDatasets</a></h3>
+
+<ul>
+  <li>Package contains machine learning datasets that are supported by the Neuron package.</li>
+  <li>Swift package support</li>
+</ul>
+
+<h3 id="neuronremotelogger"><a href="https://github.com/wvabrinskas/NeuronRemoteLogger">NeuronRemoteLogger</a></h3>
+
+<ul>
+  <li>Package that connects the Neuron package to various remote loggers like Weights and Biases</li>
   <li>Swift package support</li>
 </ul>
 
@@ -136,6 +154,21 @@
   <li>Swift package support</li>
 </ul>
 
+<h3 id="numswift"><a href="https://github.com/wvabrinskas/NumSwift">NumSwift</a></h3>
+<p><a href="https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml"><img src="https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml/badge.svg" alt="Tests" /></a></p>
+<ul>
+  <li>Adds array arithmetic to Swift</li>
+  <li>Swift package support</li>
+</ul>
+
+<h3 id="jumpiter"><a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a></h3>
+<ul>
+  <li>A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.</li>
+</ul>
+
+<hr />
+<h3 id="algorithms">Algorithms</h3>
+<hr />
 <h3 id="swiftsearchtrie"><a href="https://github.com/wvabrinskas/SwiftSearchTrie">SwiftSearchTrie</a></h3>
 <p><a href="https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml"><img src="https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml/badge.svg?branch=main" alt="Tests" /></a></p>
 <ul>
@@ -143,12 +176,28 @@
   <li>Swift package support</li>
 </ul>
 
+<h3 id="fareyalgorithm"><a href="https://github.com/wvabrinskas/FareyAlgorithm">FareyAlgorithm</a></h3>
+<ul>
+  <li>“In mathematics, the Farey sequence of order n is the sequence of completely reduced fractions, either between 0 and 1, or without this restriction,[a] which when in lowest terms have denominators less than or equal to n, arranged in order of increasing size. With the restricted definition, each Farey sequence starts with the value 0, denoted by the fraction 0/1, and ends with the value 1, denoted by the fraction 1/1 (although some authors omit these terms).”</li>
+</ul>
+
+<hr />
+<h3 id="ui">UI</h3>
+<hr />
 <h3 id="paver"><a href="https://github.com/wvabrinskas/Paver">Paver</a></h3>
 <ul>
   <li>lightweight UIView layout utility. It’s effectively an extension on UIView allowing for quick constraint assignment to any view. It reduces the complexity of using the built-in AutoLayout by wrapping a lot of the verbose assignments to easy to read functions and variables.</li>
   <li>Swift package support</li>
 </ul>
 
+<h3 id="calendarui"><a href="https://github.com/wvabrinskas/CalendarUI">CalendarUI</a></h3>
+<ul>
+  <li>A swift package for SwiftUI that allows you to quickly and simply add a full calendar to your SwiftUI projects.</li>
+</ul>
+
+<hr />
+<h3 id="general">General</h3>
+<hr />
 <h3 id="swiftlyredux"><a href="https://github.com/wvabrinskas/SwiftlyRedux">SwiftlyRedux</a></h3>
 <p><a href="https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml"><img src="https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master" alt="Tests" /></a></p>
 <ul>
@@ -165,39 +214,6 @@
 <ul>
   <li>The most bare-bones api client you can imagine in Swift.</li>
   <li>Swift package support</li>
-</ul>
-
-<h3 id="numswift"><a href="https://github.com/wvabrinskas/NumSwift">NumSwift</a></h3>
-<p><a href="https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml"><img src="https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml/badge.svg" alt="Tests" /></a></p>
-<ul>
-  <li>Adds array arithmetic to Swift</li>
-  <li>Swift package support</li>
-</ul>
-
-<h3 id="calendarui"><a href="https://github.com/wvabrinskas/CalendarUI">CalendarUI</a></h3>
-<ul>
-  <li>A swift package for SwiftUI that allows you to quickly and simply add a full calendar to your SwiftUI projects.</li>
-</ul>
-
-<h3 id="jumpiter"><a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a></h3>
-<ul>
-  <li>A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.</li>
-</ul>
-
-<h3 id="fareyalgorithm"><a href="https://github.com/wvabrinskas/FareyAlgorithm">FareyAlgorithm</a></h3>
-<ul>
-  <li>“In mathematics, the Farey sequence of order n is the sequence of completely reduced fractions, either between 0 and 1, or without this restriction,[a] which when in lowest terms have denominators less than or equal to n, arranged in order of increasing size. With the restricted definition, each Farey sequence starts with the value 0, denoted by the fraction 0/1, and ends with the value 1, denoted by the fraction 1/1 (although some authors omit these terms).”</li>
-</ul>
-
-<h3 id="swift-cli-password-generator"><a href="https://github.com/wvabrinskas/Swift-CLI-Password-Generator">Swift-CLI-Password-Generator</a></h3>
-<ul>
-  <li>Generate passwords using the cli. Completely written in swift.</li>
-</ul>
-
-<h3 id="avatar"><a href="https://github.com/wvabrinskas/Avatar">Avatar</a></h3>
-<ul>
-  <li>Generate random user Avatars for apps.</li>
-  <li>Cocoapods support</li>
 </ul>
 
 

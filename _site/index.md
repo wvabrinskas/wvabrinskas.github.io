@@ -14,7 +14,7 @@
 <img src="media/profile-sqr.jpg" class="profile" width="200"/>
 
 <div id="logo_stack">
-<a href="https://twitter.com/wvabrinskas"><img src="media/twitter.png" class="logo" width="50"/></a>
+<a href="https://twitter.com/wvabrinskas"><img src="media/x.png" class="logo" width="50"/></a>
 <a href="https://github.com/wvabrinskas"><img src="media/github.png" class="logo" width="50"/></a>
 <a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50"/></a>
 <a href="https://discord.gg/p84DYph4PW"><img src="media/discord.png" class="logo" width="50"></a>
@@ -26,8 +26,6 @@
 <iframe src="https://github.com/sponsors/wvabrinskas/button" title="Sponsor wvabrinskas" height="35" width="116" style="border: 0;"></iframe>
 </div>
 
-<div class="calendar"></div>
-
 # Hello! 👋
 
 ### About me
@@ -37,14 +35,11 @@
 - I'm a maker.
 - B.S. Degree in Toxicology
 
-<script>
-    new GitHubCalendar(".calendar", "wvabrinskas", { "responsive": true });
-</script>
 <p></p>
 ### Career
 
 #### Current
-- Uber - Senior iOS Engineer (Grocery)
+- Uber - Senior iOS Engineer
 
 #### Past
 - Fox News - Lead Ad Tech iOS Engineer  
@@ -62,10 +57,28 @@ Published: 04-28-2023
 - It is perfect for the busy commuter looking to quickly decide on an outfit before leaving for work.
 
 # Projects 📝
+- [AI / Machine Learning](#ai--machine-learning)
+- [Algorithms](#algorithms)
+- [UI](#ui)
+- [General](#general)
+
+---------------
+### AI / Machine Learning
+---------------
 ### <a href="https://github.com/wvabrinskas/Neuron">Neuron</a>
 [![Tests](https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/Neuron/actions/workflows/tests.yml)
 
   - Neuron is a swift package I developed to help learn how to make neural networks. It is far from perfect and I am still learning. There is A LOT to learn here and I've just scratched the surface. As of right now this package provides a way to get started in machine learning completely in Swift.
+  - Swift package support
+
+### <a href="https://github.com/wvabrinskas/NeuronDatasets">NeuronDatasets</a>
+
+  - Package contains machine learning datasets that are supported by the Neuron package.
+  - Swift package support
+
+### <a href="https://github.com/wvabrinskas/NeuronRemoteLogger">NeuronRemoteLogger</a>
+
+  - Package that connects the Neuron package to various remote loggers like Weights and Biases
   - Swift package support
 
 ### <a href="https://github.com/wvabrinskas/Genetic">Genetic</a>
@@ -73,15 +86,38 @@ Published: 04-28-2023
   - Genetic is a swift package that makes it incredibly simple to include the Genetic Algorithm within a project.
   - Swift package support
 
+### <a href="https://github.com/wvabrinskas/NumSwift">NumSwift</a>
+[![Tests](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml)
+  - Adds array arithmetic to Swift
+  - Swift package support
+
+### <a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a>
+  - A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.
+
+---------------
+### Algorithms
+---------------
 ### <a href="https://github.com/wvabrinskas/SwiftSearchTrie">SwiftSearchTrie</a>
 [![Tests](https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/wvabrinskas/SwiftSearchTrie/actions/workflows/tests.yml)
   - A swift package that utilizes a trie data structure to build and provide quick and efficient search algorithm. 
   - Swift package support
 
+### <a href="https://github.com/wvabrinskas/FareyAlgorithm">FareyAlgorithm</a>
+  - "In mathematics, the Farey sequence of order n is the sequence of completely reduced fractions, either between 0 and 1, or without this restriction,[a] which when in lowest terms have denominators less than or equal to n, arranged in order of increasing size. With the restricted definition, each Farey sequence starts with the value 0, denoted by the fraction 0/1, and ends with the value 1, denoted by the fraction 1/1 (although some authors omit these terms)."
+
+---------------
+### UI
+---------------
 ### <a href="https://github.com/wvabrinskas/Paver">Paver</a>
   - lightweight UIView layout utility. It's effectively an extension on UIView allowing for quick constraint assignment to any view. It reduces the complexity of using the built-in AutoLayout by wrapping a lot of the verbose assignments to easy to read functions and variables.
   - Swift package support
+ 
+### <a href="https://github.com/wvabrinskas/CalendarUI">CalendarUI</a>
+  - A swift package for SwiftUI that allows you to quickly and simply add a full calendar to your SwiftUI projects.
 
+---------------
+### General
+---------------
 ### <a href="https://github.com/wvabrinskas/SwiftlyRedux">SwiftlyRedux</a>
 [![Tests](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml)
   - A swift package that creates a new architecture for iOS development. It is very similiar to redux where there is one source of truth with a state manager object. 
@@ -95,25 +131,3 @@ Published: 04-28-2023
 [![Tests](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml)
   - The most bare-bones api client you can imagine in Swift.
   - Swift package support
-
-### <a href="https://github.com/wvabrinskas/NumSwift">NumSwift</a>
-[![Tests](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/NumSwift/actions/workflows/tests.yml)
-  - Adds array arithmetic to Swift
-  - Swift package support
- 
- 
-### <a href="https://github.com/wvabrinskas/CalendarUI">CalendarUI</a>
-  - A swift package for SwiftUI that allows you to quickly and simply add a full calendar to your SwiftUI projects.
-
-### <a href="https://github.com/wvabrinskas/Jumpiter">Jumpiter</a>
-  - A macOS app that utilizes my Neuron and Genetic swift packages to play a simple game all on its own.
-
-### <a href="https://github.com/wvabrinskas/FareyAlgorithm">FareyAlgorithm</a>
-  - "In mathematics, the Farey sequence of order n is the sequence of completely reduced fractions, either between 0 and 1, or without this restriction,[a] which when in lowest terms have denominators less than or equal to n, arranged in order of increasing size. With the restricted definition, each Farey sequence starts with the value 0, denoted by the fraction 0/1, and ends with the value 1, denoted by the fraction 1/1 (although some authors omit these terms)."
-
-### <a href="https://github.com/wvabrinskas/Swift-CLI-Password-Generator">Swift-CLI-Password-Generator</a>
-  - Generate passwords using the cli. Completely written in swift.
-
-### <a href="https://github.com/wvabrinskas/Avatar">Avatar</a>
-  - Generate random user Avatars for apps.
-  - Cocoapods support
