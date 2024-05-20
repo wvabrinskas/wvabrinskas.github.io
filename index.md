@@ -47,10 +47,12 @@
 - Elite Daily - iOS Engineer / Android Engineer 
 
 # Posts 
+### <a class="custom_link" href="pages/post/huddle" > New app release: Huddle</a>
+Published: 05-20-2024
 ### <a class="custom_link" href="pages/post/swift-arch" > A New Swift Architecture</a>
 Published: 04-28-2023
 # Apps 📱
-### <a class="custom_link" href="https://huddletogether.app" > Huddle - Get together </a>
+### <a class="custom_link" href="https://apps.apple.com/us/app/huddle-get-together/id1668460364" > Huddle - Get together </a>
 - Huddle is a unique social networking app that focuses on helping you connect with your loved ones in person and share personal posts with them. With Huddle, you can create a private network of friends and family that is completely offline and fully on device.
 
 ### <a class="custom_link" href="https://apps.apple.com/us/app/nowcast-commuter-weather/id1501885597" > Nowcast - commuter weather</a>

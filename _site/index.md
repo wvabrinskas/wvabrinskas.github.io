@@ -49,7 +49,9 @@
 # Posts 
 ### <a class="custom_link" href="pages/post/swift-arch" > A New Swift Architecture</a>
 Published: 04-28-2023
-# Published Apps 📱
+# Apps 📱
+### <a class="custom_link" href="https://huddletogether.app" > Huddle - Get together </a>
+- Huddle is a unique social networking app that focuses on helping you connect with your loved ones in person and share personal posts with them. With Huddle, you can create a private network of friends and family that is completely offline and fully on device.
 
 ### <a class="custom_link" href="https://apps.apple.com/us/app/nowcast-commuter-weather/id1501885597" > Nowcast - commuter weather</a>
 - Nowcast provides you with instant access to your commuter weather. It is a simple yet very effective app. You can set two time slots in which you would like weather to display. It will show you brief yet informative weather information for each of those times.
