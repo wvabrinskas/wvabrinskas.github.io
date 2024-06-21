@@ -62,6 +62,7 @@ Published: 04-28-2023
 
 # Projects 📝
 - [AI / Machine Learning](#ai--machine-learning)
+- [Architectures](#architectures)
 - [Algorithms](#algorithms)
 - [UI](#ui)
 - [General](#general)
@@ -110,6 +111,22 @@ Published: 04-28-2023
   - "In mathematics, the Farey sequence of order n is the sequence of completely reduced fractions, either between 0 and 1, or without this restriction,[a] which when in lowest terms have denominators less than or equal to n, arranged in order of increasing size. With the restricted definition, each Farey sequence starts with the value 0, denoted by the fraction 0/1, and ends with the value 1, denoted by the fraction 1/1 (although some authors omit these terms)."
 
 ---------------
+### Architectures
+### <a href="https://github.com/wvabrinskas/HuddleArch">HuddleArch</a>
+  - The architecture takes a lot from the RIBs architecture, with the idea of a builder and a router. Where the builder is responsible for creating the module and router with their respective dependencies. However instead of an interactor I am proposing the idea of a Module instead.
+  - The architecture relies heavily on protocol definitions and generics. This allows for the architecture to be as extensible as possible. Instead of directly referencing a specific type, a protocol definition is used instead.
+  - Swift package support
+
+### <a href="https://github.com/wvabrinskas/SwiftlyRedux">SwiftlyRedux</a>
+[![Tests](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml)
+  - A swift package that creates a new architecture for iOS development. It is very similiar to redux where there is one source of truth with a state manager object. 
+  - This framework makes a major improvement to the redux architecture in that you can directly access members of the state and call updates to subjects all with type safety without ambiguity as to what you're updating. 
+  - It is an incredibly modular architecure where the state calls out to its submodules without actually knowing what those modules do. Each module can be updated indvidually and pass its updates to the state object.
+  - This allows for your app to be easily testable.
+  - Combine support. 
+  - Swift package support
+
+---------------
 ### UI
 ---------------
 ### <a href="https://github.com/wvabrinskas/Paver">Paver</a>
@@ -122,14 +139,6 @@ Published: 04-28-2023
 ---------------
 ### General
 ---------------
-### <a href="https://github.com/wvabrinskas/SwiftlyRedux">SwiftlyRedux</a>
-[![Tests](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml/badge.svg?branch=master)](https://github.com/wvabrinskas/SwiftlyRedux/actions/workflows/Tests.yml)
-  - A swift package that creates a new architecture for iOS development. It is very similiar to redux where there is one source of truth with a state manager object. 
-  - This framework makes a major improvement to the redux architecture in that you can directly access members of the state and call updates to subjects all with type safety without ambiguity as to what you're updating. 
-  - It is an incredibly modular architecure where the state calls out to its submodules without actually knowing what those modules do. Each module can be updated indvidually and pass its updates to the state object.
-  - This allows for your app to be easily testable.
-  - Combine support. 
-  - Swift package support
 
 ### <a href="https://github.com/wvabrinskas/SimpleApiClient">SimpleApiClient</a>
 [![Tests](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml/badge.svg)](https://github.com/wvabrinskas/SimpleApiClient/actions/workflows/tests.yml)
