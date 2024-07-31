@@ -100,7 +100,7 @@ html,body {
 .wrapper, section {
   margin: auto;
   min-width: 60%;
-  max-width: 65%;
+  max-width: 75%;
   @media screen and (max-width: 600px) {
     max-width: 99%;
   }
