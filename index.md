@@ -19,6 +19,7 @@
 <a href="https://www.linkedin.com/in/william-vabrinskas-31b307a8"><img src="media/linkedin.png" class="logo" width="50"/></a>
 <a href="https://discord.gg/p84DYph4PW"><img src="media/discord.png" class="logo" width="50"></a>
 <a href="https://mstdn.social/@wvabrinskas"><img src="media/mastodon.png" class="logo" width="50"></a>
+<a href="https://bsky.app/profile/wvabrinskas.bsky.social"><img src="media/bluesky.png" class="logo" width="50"></a>
 </div>
 
 
