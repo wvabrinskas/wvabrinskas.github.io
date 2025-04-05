@@ -48,6 +48,8 @@
 - Elite Daily - iOS Engineer / Android Engineer 
 
 # Posts 
+### <a class="custom_link" href="pages/post/memory-capsules" > Huddle's newest feature: Memory Capsules</a>
+Published: 04-05-2025
 ### <a class="custom_link" href="pages/post/huddle" > New app release: Huddle</a>
 Published: 05-20-2024
 ### <a class="custom_link" href="pages/post/swift-arch" > A New Swift Architecture</a>
