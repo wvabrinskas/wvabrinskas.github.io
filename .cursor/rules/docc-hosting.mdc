@@ -1,0 +1,43 @@
+---
+description: How to fix and serve Swift-DocC documentation at a subpath on this GitHub Pages site
+globs: neuron/index.html,_site/neuron/index.html
+alwaysApply: false
+---
+
+# Swift-DocC Hosting on GitHub Pages
+
+DocC exports all asset paths as absolute from `/` by default. When the docs are served from a subpath (e.g. `/neuron/`), the browser can't find the JS/CSS and the page is blank.
+
+## Fix: Update `index.html` after exporting
+
+After running `swift package generate-documentation`, update `neuron/index.html`:
+
+- `var baseUrl = "/"` → `var baseUrl = "/neuron/"`
+- `src="/js/..."` → `src="/neuron/js/..."`
+- `href="/css/..."` → `href="/neuron/css/..."`
+
+## Better: Export with the correct base path
+
+### 1. Add the DocC plugin to `Package.swift` in the Neuron repo
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.1.0"),
+]
+```
+
+### 2. Generate docs with the correct hosting base path
+
+```bash
+swift package --allow-writing-to-directory ./neuron \
+    generate-documentation \
+    --target Neuron \
+    --output-path ./neuron \
+    --hosting-base-path neuron
+```
+
+`--allow-writing-to-directory` is required — plugins can't write outside the package sandbox without it.
+
+### 3. Copy output into the website repo
+
+Copy the generated `neuron/` folder into this repo to replace the existing one.
