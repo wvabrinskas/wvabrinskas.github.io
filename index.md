@@ -40,9 +40,10 @@
 ### Career
 
 #### Current
-- Uber - Senior iOS Engineer
+- Apple - Senior iOS Engineer
 
 #### Past
+- Uber - Senior iOS Engineer 
 - Fox News - Lead Ad Tech iOS Engineer  
 - Daily Mail - iOS Engineer 
 - Elite Daily - iOS Engineer / Android Engineer 
