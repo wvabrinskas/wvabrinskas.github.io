@@ -22,11 +22,6 @@
 <a href="https://bsky.app/profile/wvabrinskas.bsky.social"><img src="media/bluesky.png" class="logo" width="50"></a>
 </div>
 
-
-<div id="sponsor">
-<iframe src="https://github.com/sponsors/wvabrinskas/button" title="Sponsor wvabrinskas" height="35" width="116" style="border: 0;"></iframe>
-</div>
-
 # Hello! 👋
 
 ### About me
